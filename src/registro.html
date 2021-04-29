@@ -1,0 +1,42 @@
+<!DOCTYPE html/>
+<html lang="es" dir="ltr">
+    <head>  
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Pagina para registrar usuario"/>
+        <meta name="robots" content="index,follow"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="./styles/registro.css"/>
+        <!-- <link rel="stylesheet" href="./tablet.css" media="screen and (min-width: 768px)"/>
+        <link rel="stylesheet" href="./desktop.css" media="screen and (min-width: 1200px)"/> -->
+        <title>Principe Fresco</title>
+    </head>
+    <body>
+        <header>
+            <h1>Bienvenido a Principe Fresco </h1>
+        </header>
+        <main class="contenedorRegistro" id="contenedorRegistro">  
+            <section class="sesionUsuario">
+                <form action="" name="usuarioRegistro" class="usuarioRegistro">
+
+                    <label for="nombreRegistro" class="nombreRegistro">
+                        <span>nombre</span>
+                        <input type="text" id="nombreRegistro" class="cajanombreRegistro" placeholder="Ingrese su nombre de Usuario" required>
+                    </label>
+
+                    <label for="correoRegistro" class="correoRegistro">
+                        <span>Correo</span>
+                        <input type="email" id="correoRegistro" class="cajacorreoRegistro" placeholder="Ingrese su Correo de Usuario" required>
+                    </label>
+
+                    <label for="contrasenaRegistro" class="contrasenaRegistro">
+                        <span>contraseña</span>
+                        <input type="password" id="contrasenaRegistro" class="cajacontrasenaRegistro" placeholder="Ingrese su contraseña de Usuario" required>
+                    </label>
+                    <input type="submit" id="enviarRegistro" class="botonEnviarRegistro">
+                </form>
+            </section>
+        </main>
+    </body>
+    <script src="./app/registro.js" charset="utf-8"></script>
+</html>

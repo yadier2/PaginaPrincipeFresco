@@ -1,0 +1,36 @@
+<!DOCTYPE html/>
+<html lang="es" dir="ltr">
+    <head>  
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Pagina de inicio de sesion"/>
+        <meta name="robots" content="index,follow"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="./styles/login.css"/>
+        <!-- <link rel="stylesheet" href="./tablet.css" media="screen and (min-width: 768px)"/>
+        <link rel="stylesheet" href="./desktop.css" media="screen and (min-width: 1200px)"/> -->
+        <title>Principe Fresco</title>
+    </head>
+    <body>
+        <header>
+            <h1>Bienvenido a Principe Fresco </h1>
+        </header>
+        <main class="contenedorLogin" id="contenedorLogin">  
+            <section class="sesionUsuario">
+                <form action="" name="usuarioLogin" class="usuarioLogin">
+                    <label for="nombreLogin" class="nombreLogin">
+                        <span>nombre</span>
+                        <input type="text" id="nombreLogin" class="cajanombreLogin" placeholder="Ingrese su nombre de Usuario" required>
+                    </label>
+
+                    <label for="contrasenaLogin" class="contrasenaLogin">
+                        <span>contraseña</span>
+                        <input type="password" id="contrasenaLogin" class="cajacontrasenaLogin" placeholder="Ingrese su contraseña de Usuario" required>
+                    </label>
+                    <input type="submit" id="enviarLogin" class="botonEnviarLogin">
+                </form>
+            </section>
+        </main>
+    </body>
+    <script src="./app/login.js" charset="utf-8"></script>
+</html>
