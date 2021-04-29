@@ -9,14 +9,14 @@ var cadena= new Array();
 
 function receptor(){
 
-    let nombre=nombreRegistro.value;
-    let correo=correoRegistro.value;
-    let contrasena=contrasenaRegistro.value;
+    // let nombre=nombreRegistro.value;
+    // let correo=correoRegistro.value;
+    // let contrasena=contrasenaRegistro.value;
 
     var usuario={
-        names:nombre,
-        email:correo,
-        pass:contrasena
+        names:nombreRegistro.value,
+        email:correoRegistro.value,
+        pass:contrasenaRegistro.value
     }
     guardado(usuario);
 }
