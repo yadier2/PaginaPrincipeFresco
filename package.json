@@ -1,0 +1,35 @@
+{
+  "name": "pagina_principe_fresco",
+  "version": "1.0.0",
+  "description": "web tienda se basa en ropa deportiva clásica con toques coloridos inspirados en la esencia del protagonista",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx webpack --mode development",
+    "build": "npx webpack --mode production",
+    "start": "npx webpack",
+    "serve": "npx webpack serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yadier2/PaginaPrincipeFresco.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yadier2/PaginaPrincipeFresco/issues"
+  },
+  "homepage": "https://github.com/yadier2/PaginaPrincipeFresco#readme",
+  "dependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.13.16",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.13.15",
+    "babel-loader": "^8.2.2",
+    "html-webpack-plugin": "^5.3.1",
+    "webpack": "^5.36.1",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
