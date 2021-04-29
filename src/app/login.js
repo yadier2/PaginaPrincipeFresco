@@ -23,12 +23,8 @@ function receptor(){
                 indice=i;
             }
         }
-        alert(indice);
+        
         if (cadena[indice].names==nombre && cadena[indice].pass==contrasena) {
-
-            // let n=cadena[indice].names;
-            // let p=cadena[indice].pass;
-            // let e=cadena[indice].email;
 
             var persona={
                 names:cadena[indice].names,

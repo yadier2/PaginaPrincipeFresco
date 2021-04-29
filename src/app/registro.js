@@ -9,10 +9,6 @@ var cadena= new Array();
 
 function receptor(){
 
-    // let nombre=nombreRegistro.value;
-    // let correo=correoRegistro.value;
-    // let contrasena=contrasenaRegistro.value;
-
     var usuario={
         names:nombreRegistro.value,
         email:correoRegistro.value,
