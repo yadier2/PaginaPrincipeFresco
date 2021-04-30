@@ -13,7 +13,7 @@ var ciudadRegistro=document.getElementById("ciudadRegistro");
 var codigoPostalRegistro=document.getElementById("codigoPostalRegistro");
 var botonEnviar= document.getElementById("enviarRegistro");
 
-botonEnviar.addEventListener("click",receptor);
+botonEnviar.addEventListener("submit",receptor);
 
 var cadena= new Array();
 
@@ -39,7 +39,13 @@ function receptor(){
 function guardado(guardar){
     if (localStorage.getItem("Usuario")) {
         cadena=JSON.parse(localStorage.getItem("Usuario"));
-        cadena.push(guardar);
+
+        if (vigilia()=="a") {
+            cadena.push(guardar);
+        }else{
+            alert("ya existe un usuario con ese nombre o correo");
+        }
+         
     }else {
         cadena.push(guardar);
     }
@@ -47,6 +53,23 @@ function guardado(guardar){
 }
 
 
-// function vigilia(){
+function vigilia(){
+    cadena=JSON.parse(localStorage.getItem("Usuario"));
+    
+    let i=0;
+    var indice=0;
+    var usuario=usuarioRegistro.value;
 
-// }
+    for (i= 0; i < cadena.length; i++) {
+        if (cadena[i].user!=usuario) {
+        }else{
+            indice=i;
+        }
+    }
+
+    if (cadena[indice].user==usuario) {
+        return indice="b";
+    }else{
+        return indice="a";
+    }
+}

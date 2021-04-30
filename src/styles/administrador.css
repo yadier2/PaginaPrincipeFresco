@@ -1,0 +1,173 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+html{
+    font-size: 62.5%;
+}
+  
+body{
+    background-color: #f3997686;
+}
+  
+header{
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+@font-face {
+    font-family: 'Vegan Style Personal Use Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Vegan Style Personal Use Regular'), url('Vegan Style Personal Use.woff') format('woff');
+}
+
+h1{
+    font-family:Vegan Style Personal Use Regular;
+    font-size: 2rem;
+    line-height: 2rem;
+    color: #FF4C13;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+   
+.imprimirContenedor{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.3rem;
+    text-align: left;
+    background-color: #eb9fd1d5;
+    margin-top: 2rem;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom:2rem;
+    border-radius: 1rem;
+}
+  
+.imprimirFormato{
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+  }
+
+.contenedorUsuario{
+    background-color: rgb(178, 103, 221);
+    width:25rem;
+    border-radius: 1rem;
+}
+
+span{
+    margin-right: 4rem;
+  }
+
+  .imprimirContenedorTotal{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.3rem;
+    text-align: left;
+    background-color: #ff6961;
+    margin-top: 2rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom:2rem;
+    border-radius: 1rem;
+  }
+  
+
+  
+ 
+  
+  
+  
+  .imprimirFormatoTotal{
+    margin-top: 1rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1rem;
+  }
+  
+  .anumcioTotal{
+    font-weight: bold;
+    padding-left: 25%;
+  }
+  
+  .derecha{
+    text-align: right;
+  }
+  
+  .imprimirUsuario span.izquierda{
+    margin-right: 0rem;
+  }
+  
+  .imprimirFecha span.izquierda{
+    margin-right: 0rem;
+    padding-left: 0rem;
+  }
+  
+  .imprimirAdministracion span.derecha{
+    padding-left: 7.8rem;
+  }
+  
+  .imprimirAseo span.derecha{
+    padding-left: 9rem;
+  }
+  
+  .imprimirGimnasio span.derecha{
+    padding-left: 7.5rem;
+  }
+  
+  .imprimirTotal span.derecha{
+    padding-left: 11rem;
+  }
+  
+  .imprimirTotal{
+    font-weight: bold;
+  }
+  
+  .imprimirUsuario{
+    font-weight: bold;
+  }
+  
+  .imprimirFecha{
+    font-weight: bold;
+  }
+  
+  .cajaNumeroPredio{
+    width: 5rem;
+  }
+  
+  .cajaMesPago{
+    width: 15rem;
+  }
+  
+  .cajaTipoPredio{
+    width: 10rem;
+  }
+  
+  .cajaMetroCuadrado{
+    width: 5rem;
+  }
+  
+  .cajaCantidadPersonas{
+    width: 5rem;
+  }
+  
+  .contenedorEdadesPersonas{
+    text-align: center;
+  }
+  
+  .contenedorEdadesPersonas span{
+    margin-right: 0rem;
+    text-align: center;
+  }
+  
+  .contenedorEdadesPersonas input{
+    width: 11rem;
+  }
+  
