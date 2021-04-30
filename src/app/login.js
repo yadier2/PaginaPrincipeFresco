@@ -30,7 +30,6 @@ function receptor(){
                 user:cadena[indice].user,
                 pass:cadena[indice].pass,
                 email:cadena[indice].email,
-
                 name:cadena[indice].name,
                 lastName:cadena[indice].lastName,
                 cedu:cadena[indice].cedu,
