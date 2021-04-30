@@ -1,13 +1,13 @@
 import productosBD from './baseDatosProductos'
 import Checkout from './Chekout'
 let Carrito = []
-let valueCantidad =null
+let valueCantidad = null
 if (localStorage.getItem('carrito')) {
     Carrito = JSON.parse(localStorage.getItem('carrito'))
 }
 function AgregarCarrito(Id) {
     let product = productosBD[Id]
-     document.querySelector('.agregarFavorito').innerHTML = `
+    document.querySelector('.agregarFavorito').innerHTML = `
     <div id="sideNavigation" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" id="cerrar" >&times;</a>
         <div class="contenido">
@@ -53,33 +53,34 @@ function AgregarCarrito(Id) {
             </div>
         </div>
     </div>
-    ` 
-   
-        valueCantidad= document.querySelector('#cantidad')
-        valueCantidad.addEventListener('change', () => {
-        let subtotal = document.querySelector('#precioTotal').innerHTML =product.precio * valueCantidad.value
-        })
+    `
+
+    valueCantidad = document.querySelector('#cantidad')
+    valueCantidad.addEventListener('change', () => {
+        let subtotal = document.querySelector('#precioTotal').innerHTML = product.precio * valueCantidad.value
+    })
 
     let cerrar = document.querySelector('#cerrar')
-    cerrar.addEventListener('click',() => {
-    document.getElementById("sideNavigation").style.width = "0";
-    console.log("holslsls");
-})  
-let verificar = document.querySelector('#verificar')
-verificar.addEventListener('click' ,() => {
-let inde = 0
-Carrito.forEach((item, index) => {
-    if (item.id == Id) {
-        inde = index
-    }
-});
+    cerrar.addEventListener('click', () => {
+        document.getElementById("sideNavigation").style.width = "0";
 
- 
- Carrito[inde].cantidad   =  valueCantidad.value  
-localStorage.setItem('carrito', JSON.stringify(Carrito))
+    })
+    console.log(Carrito)
+    let verificar = document.querySelector('#verificar')
+    verificar.addEventListener('click', () => {
+        let inde = 0
+        Carrito.forEach((item, index) => {
+            if (item.id == Id) {
+                inde = index
+                console.log(inde, index, Id)
+            }
+            
+        });
+       
+        Carrito[inde].cantidad = parseInt(valueCantidad.value);
+        localStorage.setItem('carrito', JSON.stringify(Carrito))
 
-Checkout() 
-})
-
-} 
+        Checkout()
+    })
+}
 export default AgregarCarrito

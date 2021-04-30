@@ -21,18 +21,21 @@ object-fit: cover;">
       </div>
 `
 });
-Card.innerHTML += `
+document.querySelector('main').innerHTML += `
+<img src="https://i.ibb.co/wck8mnY/cover.png" style="max-heigth:350px;
+object-fit: cover; width: 100%;"/>
+
 <footer>
 <div class="footer px-3">
     <div class="logo-1 mt-5 pt-5 mx-5">
-        <img src="imgs/logo-fresh.png">
+        <img src="https://i.ibb.co/vxR3WJK/logo-fresh.png">
     </div>
     <div class="row redes_sociales mt-5 ps-5">
         <div class="col-6">
-            <img src="imgs/Group 2.png">
+            <img src="https://i.ibb.co/pnWQ0mW/Group-2.png">
         </div>
         <div class="col-1">
-            <img src="imgs/Group 3.png">
+            <img src="https://i.ibb.co/CHDcBTm/Group-3.png">
         </div>
     </div>
 </div>

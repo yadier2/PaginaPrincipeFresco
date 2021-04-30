@@ -18,7 +18,7 @@ function Navbar() {
             <a class="nav-link active shop" aria-current="page" href="#">SHOP</a>
             <a class="nav-link active collections" href="#">COLLECTIONS</a>
             <span class="nav-link active login" data-bs-toggle="modal" data-bs-target="#staticBackdrop"  ><img src="https://i.ibb.co/TrswtXv/icons8-user-2.png"></span>
-            <span class="active favoritos" " style="margin-top: 10px !important;" ><img src="https://i.ibb.co/fq5fN7j/icons8-user-3.png"></span> 
+            <span class="active favoritos carrito" " style="margin-top: 10px !important;" ><img src="https://i.ibb.co/fq5fN7j/icons8-user-3.png"></span> 
             </div>
     </div>
 </div>

@@ -12,8 +12,8 @@ let datalleProducto = document.querySelector('main')
 datalleProducto.innerHTML = `
 <main class="mb-5">
 <div class="agregarFavorito"></div>
-<div class="row mt-5">
-    <div class="col-1  detalle_producto_imgs">
+<div class="row ">
+    <div class="col-1 detalle_producto_imgs">
         <div class="row">
             <div class="col">
                 <a href="#"><img class="img_detalle_producto" src=${productoId.imagenes[0]}></a>
@@ -36,7 +36,7 @@ datalleProducto.innerHTML = `
         </div>
     </div>
     <div class="col-5 img_detalle_producto_grande">
-        <img class="" src=${productoId.imagen}>
+        <img class="" src=${productoId.imagen} style="max-width: 100%">
     </div>
     <div class="col-3">
         <div class="">
@@ -97,7 +97,7 @@ datalleProducto.innerHTML = `
     <div class="slick-track" id="track">
         <div class="slick">
             <div class="card img_ver_mas" style="width: 18rem;">
-                <img src="imgs/prenda4.png" class="card-img-top" alt="...">
+                <img src="https://i.ibb.co/0QZYKvx/prenda4.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Fresh Stripe Sweater</h5>
                     <p class="card-text">$85.00</p>
@@ -106,7 +106,7 @@ datalleProducto.innerHTML = `
         </div>
         <div class="slick">
             <div class="card img_ver_mas" style="width: 18rem;">
-                <img src="imgs/prenda5.png" class="card-img-top" alt="...">
+                <img src="https://i.ibb.co/JHXZFcq/prenda5.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Fresh Black Tie-Dye Hoodie</h5>
                     <p class="card-text">$75.00</p>
@@ -115,7 +115,7 @@ datalleProducto.innerHTML = `
         </div>
         <div class="slick">
             <div class="card img_ver_mas" style="width: 18rem;">
-                <img src="imgs/prenda6.png" class="card-img-top" alt="...">
+                <img src="https://i.ibb.co/4FNzmKx/prenda6.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Pose For It Tee</h5>
                     <p class="card-text">$45.00</p>
@@ -135,20 +135,20 @@ datalleProducto.innerHTML = `
 </div>
 </div>
 <div class="cover">
-    <img class="img-fluid" src="imgs/cover.png">
+    <img class="img-fluid" src="https://i.ibb.co/wck8mnY/cover.png">
 </div>
 </main>
 <footer>
 <div class="footer px-3">
     <div class="logo-1 mt-5 pt-5 mx-5">
-        <img src="imgs/logo-fresh.png">
+        <img src="https://i.ibb.co/vxR3WJK/logo-fresh.png">
     </div>
     <div class="row redes_sociales mt-5 ps-5">
         <div class="col-6">
-            <img src="imgs/Group 2.png">
+            <img src="https://i.ibb.co/pnWQ0mW/Group-2.png">
         </div>
         <div class="col-1">
-            <img src="imgs/Group 3.png">
+            <img src="https://i.ibb.co/CHDcBTm/Group-3.png">
         </div>
     </div>
 </div>

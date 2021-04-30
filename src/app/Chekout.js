@@ -5,7 +5,10 @@ if (localStorage.getItem('Usuario')) {
     Usuer = JSON.parse(localStorage.getItem('Usuario'))
 } 
 let persona = Usuer[0]
-console.log(persona, "4 am");
+let carrito = []
+if (localStorage.getItem('carrito')) {
+    carrito = JSON.parse(localStorage.getItem('carrito'))
+}
 
 function Checkout() {
 
@@ -116,7 +119,7 @@ function Checkout() {
         <div class="col-md-4 mt-4 o">
             <p class="order">Order review</p>
             <div class="row g-3">
-                <table class="table">
+                <table class="table"  id="producto_checkout">
                     <thead class="tbl_title">
                         <tr>
                             <th scope="col">Producto Name</th>
@@ -126,18 +129,10 @@ function Checkout() {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Camiseta</td>
-                            <td>50000</td>
-                            <td>1</td>
-                            <td>50000</td>
-                        </tr>
+                       
                     </tbody>
-                    <tr>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col">Grand Total</th>
-                        <th scope="col">50000</th>
+                    <tr id="total" >
+                       
                     </tr>
                 </table>
                 <div class="col-12">
@@ -159,24 +154,37 @@ function Checkout() {
 <footer>
 <div class="footer px-3">
     <div class="logo-1 mt-5 pt-5 mx-5">
-        <img src="imgs/logo-fresh.png">
+        <img src="https://i.ibb.co/vxR3WJK/logo-fresh.png">
     </div>
     <div class="row redes_sociales mt-5 ps-5">
         <div class="col-6">
-            <img src="imgs/Group 2.png">
+            <img src="https://i.ibb.co/pnWQ0mW/Group-2.png">
         </div>
         <div class="col-1">
-            <img src="imgs/Group 3.png">
+            <img src="https://i.ibb.co/CHDcBTm/Group-3.png">
         </div>
     </div>
 </div>
 </footer>
 `
-/* 
- let a = persona.filter((item)  => item == active) */
+carrito.forEach(prod => {
 
 
- if (false) {
+ document.querySelector("#producto_checkout tbody").innerHTML += `
+ <tr>
+     <td>${prod.nombre}</td>
+     <td>${prod.precio}</td>
+     <td>${prod.cantidad}</td>
+     <td>${prod.precio * prod.cantidad}</td>
+ </tr>`
+});
+document.querySelector("#producto_checkout #total").innerHTML += `
+    <th scope="col"></th>
+    <th scope="col"></th>
+    <th scope="col">Grand Total</th>
+    <th scope="col">${prod.precio * prod.cantidad}</th>` 
+
+ if (Usuer.length > 0) {
    
     document.querySelector("#usuarioRegistro").value = persona.user
 
@@ -206,6 +214,8 @@ let estado = persona? true: false
 estado ?document.querySelector('#inlineRadio2').checked =false : 
 document.querySelector('#inlineRadio2').checked =true
 Registro()
+
+
 
 
 }

@@ -6,7 +6,7 @@ import '../styles/checkout.css'
 import Comentario from './comentario'
 import Navbar from './Navbar'
 import CardProducts from './CardProducts'
-import Checkout from './Chekout'
+
 
 import DetalleProducto from './DetalleProducto'
 import Login from './Login'
@@ -20,10 +20,4 @@ CardProducts()
         DetalleProducto(id)     
     }
 }) 
-/* setInterval(() => {
-
-   Checkout()  
-    
-}, 2000);
- */
 
