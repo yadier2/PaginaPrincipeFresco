@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+/*Carrito*/
+
+.contenido {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.producto {
+    margin-top: 50px;
+}
+
+.detalle_producto_carrito {
+    width: 259px;
+    height: 115px;
+}
+
+.producto_carrito {
+    width: 115px;
+    height: 115px;
+}
+
+.titulo_producto {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #1D1D1D;
+}
+
+.precio_producto {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    color: #1D1D1D;
+}
+
+.cantidad {
+    width: 82px;
+    height: 80px;
+    margin-left: 39px;
+}
+
+.form-cantidad {
+    width: 82px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    color: #1D1D1D;
+    text-align: center;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom: solid;
+}
+
+.remove {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    color: #1D1D1D;
+    padding: 0;
+}
+
+.total_a_pagar {
+    margin-top: 128px;
+}
+
+.subtotal {
+    margin-right: 160px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #1D1D1D;
+}
+
+.precio_total {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: right;
+    color: #1D1D1D;
+}
+
+.info1 {
+    margin-top: 56px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 24px;
+    color: #4A4A4A;
+}
+.button_secundary {
+    position: relative;
+    width: 424px;
+    height: 56px;
+    border: 4px solid #4276FB;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background: #4276FB;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-top: 16px;
+}
+.info2 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    color: #1D1D1D;
+    margin-top: 32px;
+    margin-bottom: 401px;
+}
+
+/*Nav deslizante*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 50px;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+/* Css de la X */
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Al pasar al mobile */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+    .contenido{
+        margin-left: 90px;
+    }
+}
