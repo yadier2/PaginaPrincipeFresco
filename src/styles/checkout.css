@@ -20,14 +20,23 @@
     line-height: 40px;
     color: #1D1D1D;
 }
-.tbl_title{
+
+.tbl_title {
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
     color: #1D1D1D;
 }
-.colum_check{
+
+.colum_check {
     border-right: groove;
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+    .b, .p, .o {
+        min-width: min-content !important;
+        margin-left: 40px;
+        border-right: none;
+    }
+}

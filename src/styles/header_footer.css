@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
 /*Css del header*/
 
 .logo {
@@ -49,4 +48,16 @@ main {
     left: 0px;
     top: 5087.32px;
     background: #1D1D1D;
+}
+
+/*Al pasar al mobile*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .shop, .login, .collections {
+        margin-left: 0 !important;
+        text-align: center;
+    }.carrito{
+        margin-right: 0 !important;
+        text-align: center;
+    }
 }

@@ -28,7 +28,7 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link active shop" aria-current="page" href="#">SHOP</a>
-                        <a class="nav-link active" href="#">COLLECTIONS</a>
+                        <a class="nav-link active collections" href="#">COLLECTIONS</a>
                         <a class="nav-link active login" href="#"><img src="imgs/icons8-user 2.png"></a>
                         <a class="nav-link active carrito" href="#" onclick="openNav()"><img
                                 src="imgs/icons8-user 3.png"></a>
@@ -85,139 +85,148 @@
     </div>
     <script src="app/carrito.js"></script>
     <main class="content px-2">
-        <div class="row px-5 pt-5 mb-5">
-            <div class="col-md-4 colum_check mt-4">
-                <p class="billing">Billing information</p>
-                <div>
-                    <p class="subtitle">Login and Guest (or) Register</h2>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                            value="option1">
-                        <label class="form-check-label" for="inlineRadio1">Guest</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                            value="option2">
-                        <label class="form-check-label" for="inlineRadio2">Register</label>
-                    </div>
-                </div>
-                <form class="row g-3">
-                    <div class="col-md-6">
-                        <label for="inputName" class="form-label">Name *</label>
-                        <input type="text" class="form-control" id="inputName" required>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="inputLastName" class="form-label">Last Name *</label>
-                        <input type="text" class="form-control" id="inputLastName" required>
-                    </div>
-                    <div class="col-12">
-                        <label for="inputEmailAddress" class="form-label">Email Address *</label>
-                        <input type="email" class="form-control" id="inputEmailAddress" required>
-                    </div>
-                    <div class="col-12">
-                        <label for="inputAddress" class="form-label">Address *</label>
-                        <input type="text" class="form-control" id="inputAddress" required>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="inputCity" class="form-label">City *</label>
-                        <input type="text" class="form-control" id="inputCity" required>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="inputStateProvidence" class="form-label">State / Providence *</label>
-                        <input type="text" class="form-control" id="inputLastName" required>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="inputPostalCode" class="form-label">Zip / Postal Code *</label>
-                        <input type="text" class="form-control" id="inputPostalCode" required>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="inputCountry" class="form-label">Country *</label>
-                        <input type="number" class="form-control" id="inputCountry" required>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="inputTelephone" class="form-label">Telephone *</label>
-                        <input type="number" class="form-control" id="inputTelephone" required>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="inputCedula" class="form-label">Cedula *</label>
-                        <input type="text" class="form-control" id="inputCedula" required>
-                    </div>
-                </form>
-            </div>
-            <div class="col-md-4 colum_check mt-4">
-                <p class="payment">Payment methods</p>
-                <div class="row g-3">
-                    <p class="subtitle">Accepted Cards</p>
-                    <div class="icon-container">
-                        <i class="fa fa-cc-visa" style="color:navy;"></i>
-                        <i class="fa fa-cc-amex" style="color:blue;"></i>
-                        <i class="fa fa-cc-mastercard" style="color:red;"></i>
-                        <i class="fa fa-cc-discover" style="color:orange;"></i>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="inputCName" class="form-label">Name on Card *</label>
-                        <input type="text" class="form-control" id="inputCName" required placeholder="John More Doe">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="inputCCNum" class="form-label">Credit card number *</label>
-                        <input type="text" class="form-control" id="inputCCNum" required
-                            placeholder="1111-2222-3333-4444">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="inputExpMonth" class="form-label">Exp Month *</label>
-                        <input type="text" class="form-control" id="inputExpMonth" required placeholder="September">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="inputExpYear" class="form-label">Exp Year *</label>
-                        <input type="number" class="form-control" id="inputExpYear" required placeholder="2018">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="inputCCV" class="form-label">CCV *</label>
-                        <input type="number" class="form-control" id="inputCCV" required placeholder="352">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mt-4">
-                <p class="order">Order review</p>
-                <div class="row g-3">
-                    <table class="table">
-                        <thead class="tbl_title">
-                            <tr>
-                                <th scope="col">Producto Name</th>
-                                <th scope="col">Price</th>
-                                <th scope="col">Qty</th>
-                                <th scope="col">Subtotal</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Camiseta</td>
-                                <td>50000</td>
-                                <td>1</td>
-                                <td>50000</td>
-                            </tr>
-                        </tbody>
-                        <tr>
-                            <th scope="col"></th>
-                            <th scope="col"></th>
-                            <th scope="col">Grand Total</th>
-                            <th scope="col">50000</th>
-                        </tr>
-                    </table>
-                    <div class="col-12">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck">
-                            <label class="form-check-label" for="gridCheck">
-                                I acept the Terms and Conditions
-                            </label>
+        <form class="row g-3">
+            <div class="row px-5 pt-5 mb-5">
+                <div class="col-md-4 colum_check b mt-4">
+                    <p class="billing">Billing information</p>
+                    <div>
+                        <p class="subtitle">Login and Guest (or) Register</h2>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                value="option1" checked>
+                            <label class="form-check-label" for="inlineRadio1">Guest</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="inlineRadio2">Register</label>
                         </div>
                     </div>
+                    <div class="col-md-6">
+                        <label for="usuarioRegistro" class="form-label">User *</label>
+                        <input type="text" class="form-control" id="usuarioRegistro" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="contrasenaRegistro" class="form-label">Password *</label>
+                        <input type="text" class="form-control" id="contrasenaRegistro" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="nombreRegistro" class="form-label">Name *</label>
+                        <input type="text" class="form-control" id="nombreRegistro" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="apellidoRegistro" class="form-label">Last Name *</label>
+                        <input type="text" class="form-control" id="apellidoRegistro" required>
+                    </div>
                     <div class="col-12">
-                        <button type="submit" class="btn btn-primary">Realizar compra</button>
+                        <label for="correoRegistro" class="form-label">Email Address *</label>
+                        <input type="email" class="form-control" id="correoRegistro" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="direccionRegistro" class="form-label">Address *</label>
+                        <input type="text" class="form-control" id="direccionRegistro" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="ciudadRegistro" class="form-label">City *</label>
+                        <input type="text" class="form-control" id="ciudadRegistro" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="departamentoRegistro" class="form-label">State / Providence *</label>
+                        <input type="text" class="form-control" id="departamentoRegistro" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="codigoPostalRegistro" class="form-label">Zip / Postal Code *</label>
+                        <input type="text" class="form-control" id="codigoPostalRegistro" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="paisRegistro" class="form-label">Country *</label>
+                        <input type="text" class="form-control" id="paisRegistro" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="celularRegistro" class="form-label">Telephone *</label>
+                        <input type="number" class="form-control" id="celularRegistro" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="cedulaRegistro" class="form-label">Cedula *</label>
+                        <input type="text" class="form-control" id="cedulaRegistro" required>
+                    </div>
+                </div>
+                <div class="col-md-4 colum_check p mt-4">
+                    <p class="payment">Payment methods</p>
+                    <div class="row g-3">
+                        <p class="subtitle">Accepted Cards</p>
+                        <div class="icon-container">
+                            <i class="fa fa-cc-visa" style="color:navy;"></i>
+                            <i class="fa fa-cc-amex" style="color:blue;"></i>
+                            <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                            <i class="fa fa-cc-discover" style="color:orange;"></i>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputCName" class="form-label">Name on Card *</label>
+                            <input type="text" class="form-control" id="inputCName" required
+                                placeholder="John More Doe">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputCCNum" class="form-label">Credit card number *</label>
+                            <input type="text" class="form-control" id="inputCCNum" required
+                                placeholder="1111-2222-3333-4444">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputExpMonth" class="form-label">Exp Month *</label>
+                            <input type="text" class="form-control" id="inputExpMonth" required placeholder="September">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputExpYear" class="form-label">Exp Year *</label>
+                            <input type="number" class="form-control" id="inputExpYear" required placeholder="2018">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputCCV" class="form-label">CCV *</label>
+                            <input type="number" class="form-control" id="inputCCV" required placeholder="352">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4 o">
+                    <p class="order">Order review</p>
+                    <div class="row g-3">
+                        <table class="table">
+                            <thead class="tbl_title">
+                                <tr>
+                                    <th scope="col">Producto Name</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Qty</th>
+                                    <th scope="col">Subtotal</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Camiseta</td>
+                                    <td>50000</td>
+                                    <td>1</td>
+                                    <td>50000</td>
+                                </tr>
+                            </tbody>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+                                <th scope="col">Grand Total</th>
+                                <th scope="col">50000</th>
+                            </tr>
+                        </table>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    I acept the Terms and Conditions
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button id="enviarRegistro" type="submit" class="btn btn-primary">Realizar compra</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </form>
     </main>
     <footer>
         <div class="footer px-3">
@@ -237,6 +246,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
+    <script src="./app/checkout.js" charset="utf-8"></script>
+    <script src="./app/registro.js" charset="utf-8"></script>
 </body>
 
 </html>
