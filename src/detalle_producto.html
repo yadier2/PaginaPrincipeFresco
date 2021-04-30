@@ -8,10 +8,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link href="styles/detalle_producto.css" rel="stylesheet">
+    <link href="styles/header_footer.css" rel="stylesheet">
+    <link href="styles/carrito.css" rel="stylesheet">
     <title>Detalle</title>
 </head>
 
-<body>
+<body id="body">
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -26,12 +28,97 @@
                         <a class="nav-link active shop" aria-current="page" href="#">SHOP</a>
                         <a class="nav-link active" href="#">COLLECTIONS</a>
                         <a class="nav-link active login" href="#"><img src="imgs/icons8-user 2.png"></a>
-                        <a class="nav-link active carrito" href="#"><img src="imgs/icons8-user 3.png"></a>
+                        <a class="nav-link active carrito" href="#" onclick="openNav()"><img
+                                src="imgs/icons8-user 3.png"></a>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
+
+    <!--Carrito-->
+    <div id="sideNavigation" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="contenido">
+            <div class="row producto">
+                <div class="col-7  detalle_producto_carrito">
+                    <div class="row">
+                        <div class="col-6">
+                            <img class="producto_carrito" src="imgs/prenda.png">
+                        </div>
+                        <div class="col-6">
+                            <p class="titulo_producto">Crown Sweatshirt</p>
+                            <p class="precio_producto">S $85.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 cantidad">
+                    <input type="number" class="form-control form-cantidad" placeholder="1">
+                    <button type="button" class="btn remove">Remove</button>
+                </div>
+            </div>
+            <div class="row total_a_pagar">
+                <div class="col subtotal">
+                    <p>SubTotal</p>
+                </div>
+                <div class="col precio_total">
+                    <p>$85.00</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="info1">
+                    <p>Shipping, taxes, and discount codes calculated at checkout.</p>
+                </div>
+            </div>
+            <div class="row">
+                <button type="button" class="btn button_secundary">CHECK OUT</button>
+            </div>
+            <div class="row">
+                <div class="info2">
+                    <p>Please Note: All items are pre-order and will ship in 6-10 weeks. Guaranteed holiday delivery.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app/carrito.js"></script>
+
+    <!--Carrusel para mobile-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imgs/prenda.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="imgs/prenda1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="imgs/prenda2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="imgs/prenda3.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
     <main class="mb-5">
         <div class="row mt-5">
             <div class="col-1  detalle_producto_imgs">
@@ -56,10 +143,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-5 img_detalle_producto_grande">
-                <img class="" src="imgs/prenda.png">
+            <div class="col-6 img_detalle_producto_grande">
+                <img class="imagen_grande" src="imgs/prenda.png">
             </div>
-            <div class="col-3">
+            <div class="information_producto">
                 <div class="">
                     <p class="titulo_prenda">Crown Sweatshirt</p>
                     <p class="precio_prenda">$ 80.00</p>
@@ -85,7 +172,7 @@
                     </div>
                     <div class="btn-comprar mb-4">
                         <div class="row">
-                            <button type="button" class="btn btn_negro">ADD TO CART</button>
+                            <button type="button" class="btn btn_negro" onclick="openNav()">ADD TO CART</button>
                         </div>
                         <div class="row">
                             <button type="button" class="btn btn_azul">BUY IT NOW</button>
