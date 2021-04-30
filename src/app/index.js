@@ -1,17 +1,29 @@
+import '../styles/detalle_producto.css'
+import '../styles/carrito.css'
+import '../styles/header_footer.css'
+import '../styles/checkout.css'
+
 import Comentario from './comentario'
-import Nav from './Nav'
 import Navbar from './Navbar'
 import CardProducts from './CardProducts'
-/* let miComentario = new Comentario */
+import Checkout from './Chekout'
 
-/* Nav()  */
-/* Navbar() */
-/* CardProducts() */
-/* document.querySelector('.containerProducts').addEventListener('click', (e) => {
-  console.log(e.target.className);
+import DetalleProducto from './DetalleProducto'
+import Login from './Login'
+/* let miComentario = new Comentario */
+ Login()  
+Navbar()  
+CardProducts()   
+ document.querySelector('.containerProducts').addEventListener('click', (e) => {
      if (e.target.className == 'btn btn-dark comprar') {
-  let container = document.querySelector('.container ')
-   container.remove()
-   
-    } 
-}) */
+         let id= e.target.dataset.user
+        DetalleProducto(id)     
+    }
+}) 
+/* setInterval(() => {
+
+   Checkout()  
+    
+}, 2000);
+ */
+

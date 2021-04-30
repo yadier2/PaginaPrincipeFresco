@@ -1,5 +1,5 @@
 const HTMLWebpackPlugin = require('html-webpack-plugin')
-
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path'); // invocar libreria - concatena el directorio 
 module.exports = {
   entry: './src/app/index.js',
@@ -9,11 +9,24 @@ module.exports = {
     port: 9000,
     open:true
   },
+  module:{
+    rules: [
+        {
+           test: /\.css$/i,
+           use: [MiniCssExtractPlugin.loader, 'css-loader'],        
+       }
+    ]
+ }
+,
   output: {
-    filename: 'app.bundle.js',
+    filename: 'js/app.bundle.js',
     path: path.resolve(__dirname, 'build'),
   },
   plugins: [
+    new MiniCssExtractPlugin({
+      filename: 'css/app.bundle.css'
+  }),
+
     new HTMLWebpackPlugin(
       {
         template: './src/index.html',

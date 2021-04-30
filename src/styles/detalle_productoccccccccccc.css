@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+/*Imagenes del producto*/
+
+.detalle_producto_imgs {
+    margin-left: 83px;
+}
+
+.img_detalle_producto {
+    position: static;
+    width: 80px;
+    height: 120px;
+    left: 0px;
+    top: 144px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+/*Imagen grande*/
+
+/*Detalles del producto*/
+
+.information_producto {
+    width: 424px;
+    height: 752px;
+    left: 859px;
+    top: 174px;
+}
+
+.titulo_prenda {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+}
+
+.precio_prenda {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.talla {
+    width: 275px;
+    height: 104px;
+}
+
+.btn_negro {
+    width: 424px;
+    height: 56px;
+    border-radius: 4px;
+    padding: 16px, 10px, 16px, 10px;
+    background: #1D1D1D;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+
+.btn_azul {
+    width: 424px;
+    height: 56px;
+    border-radius: 4px;
+    padding: 16px, 10px, 16px, 10px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 24px;
+    color: #FFFFFF;
+    background: #4276FB;
+}
+
+/*Sección de ver más*/
+
+.ver_mas {
+    width: 1132px;
+    height: 611px;
+    margin-left: 83px;
+    margin-right: 151px;
+}
+
+.titulo_ver_mas {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 75px;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #1D1D1D;
+    margin-top: 250px;
+    margin-bottom: 64px;
+}
+
+.img_ver_mas {
+    width: 340px !important;
+    height: 511px;
+}
+
+.card-title, .card-text {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: #1D1D1D;
+}
+
+/*Imagen de footer*/
+
+.cover {
+    margin-top: 250px;
+    margin-bottom: 64px;
+}
+
+/*Carrusel*/
+#carouselExampleIndicators{
+    display: none;
+}
+/*Al pasar al mobile*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .detalle_producto_imgs {
+        display: none;
+    }
+    .img_detalle_producto_grande {
+        display: none;
+    }
+    .information_producto {
+        margin-top: 40px;
+        text-align: -webkit-center;
+        margin-left: 90px;
+    }
+    .ver_mas{
+        
+    }
+    #carouselExampleIndicators{
+        display: block;
+        margin-left: 90px;
+    }
+}
