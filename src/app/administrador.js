@@ -10,33 +10,36 @@ function agregarBoton(){
 
 function impresion(){
 
-  if (localStorage.getItem("cadena")) {
-    indice=parseInt(localStorage.getItem("indice"));
-    cadena=JSON.parse(localStorage.getItem("cadena"));
+  if (localStorage.getItem("Informe")) {
+    cadena=JSON.parse(localStorage.getItem("Informe"));
     //alert("esta en el if (existe): "+cadena);
 
-    var admi=0;
-    var aseo=0;
-    var gimnasio=0;
-    var total=0;
+
+
+    var usuar="";
+    var fecha=0;
+    var produto="";
+    var cantidad=0;
+    var valod=0;
+    var tPagar="0";
 
     var i=0;
     var texto1;
-    var texto2='<main class="imprimirContenedor" id="imprimirContenedor_'+i+'"><section class="imprimirFormato" id="imprimirFormato_'+i+'">';
+    var texto2='<main class="imprimirContenedor" id="imprimirContenedor_'+i+'"><section class="imprimirFormato" id="imprimirFormato_'+i+'"><section class="contenedorUsuario" id="contenedorUsuario_'+i+'">';
 
     texto1=texto2;
 
-    for (i = 0; i < indice; i++) {
+    for (i = 0; i < cadena.length; i++) {
 
-      if (i!=0) {
-        texto2='<main class="imprimirContenedor" id="imprimirContenedor_'+i+'"><section class="imprimirFormato" id="imprimirFormato_'+i+'">';
-        texto1=texto1+texto2;
-      }
+        if (i!=0) {
+            texto2='<main class="imprimirContenedor" id="imprimirContenedor_'+i+'"><section class="imprimirFormato" id="imprimirFormato_'+i+'"><section class="contenedorUsuario" id="contenedorUsuario_'+i+'">';
+            texto1=texto1+texto2;
+        }
 
-      admi=admi+parseInt(cadena[i][2]);
-      aseo=aseo+parseInt(cadena[i][3]);
-      gimnasio=gimnasio+parseInt(cadena[i][4]);
-      total=total+parseInt(cadena[i][5]);
+        usuar=cadena[i].user;
+        fecha=cadena[i].fecha;
+        prod=cadena[i].producto;
+        total=total+parseInt(cadena[i][5]);
 
       var texto3='<label for="imprimirNumeroPredio" class="imprimirNumeroPredio"><span class="izquierda">Señores Apartamento #</span><span class="derecha">'+cadena[i][0]+'</span></label><label for="imprimirMes" class="imprimirMes"><span class="izquierda">Cuota mes: </span><span class="derecha">'+cadena[i][1]+'</span></label><br><br><br><label for="imprimirAdministracion" class="imprimirAdministracion"><span>Valor Administracion</span><span class="derecha">$ '+cadena[i][2]+'</span></label><br><br><label for="imprimirAseo" class="imprimirAseo"><span>Valor Cuota de aseo</span><span class="derecha">$ '+cadena[i][3]+'</span></label><br><br><label for="imprimirGimnasio" class="imprimirGimnasio"><span>Derechos de Gimnasio</span><span class="derecha">$ '+cadena[i][4]+'</span></label><br><br><br><label for="imprimirTotal" class="imprimirTotal"><span>Total a Pagar</span><span class="derecha">$ '+cadena[i][5]+'</span></label>';
       texto1=texto1+texto3;
