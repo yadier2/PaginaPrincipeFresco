@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+.billing, .payment, .order {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.02em;
+    color: #1D1D1D;
+    border-bottom-style: dotted;
+    height: 120px;
+    margin-bottom: 50px;
+}
+
+.subtitle {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 40px;
+    color: #1D1D1D;
+}
+.tbl_title{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: #1D1D1D;
+}
+.colum_check{
+    border-right: groove;
+}
+
