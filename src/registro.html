@@ -19,9 +19,24 @@
             <section class="sesionUsuario">
                 <form action="" name="usuarioRegistro" class="usuarioRegistro">
 
+                    <label for="usuarioRegistro" class="usuarioRegistro">
+                        <span>Nombre de Usuario</span>
+                        <input type="text" id="usuarioRegistro" class="cajaUsuarioRegistro" placeholder="Ingrese su nombre de Usuario" required>
+                    </label>
+
                     <label for="nombreRegistro" class="nombreRegistro">
-                        <span>nombre</span>
-                        <input type="text" id="nombreRegistro" class="cajanombreRegistro" placeholder="Ingrese su nombre de Usuario" required>
+                        <span>Nombre</span>
+                        <input type="text" id="nombreRegistro" class="cajaNombreRegistro" placeholder="Ingrese su nombre" required>
+                    </label>
+
+                    <label for="apellidoRegistro" class="apellidoRegistro">
+                        <span>Apellido</span>
+                        <input type="text" id="apellidoRegistro" class="cajaApellidoRegistro" placeholder="Ingrese su apellido" required>
+                    </label>
+
+                    <label for="cedulaRegistro" class="cedulaRegistro">
+                        <span>Cedula</span>
+                        <input type="number" id="cedulaRegistro" class="cajaCedulaRegistro" placeholder="Ingrese su Cedula"  min="100000000" max="9999999999" required>
                     </label>
 
                     <label for="correoRegistro" class="correoRegistro">
@@ -33,6 +48,37 @@
                         <span>contraseña</span>
                         <input type="password" id="contrasenaRegistro" class="cajacontrasenaRegistro" placeholder="Ingrese su contraseña de Usuario" required>
                     </label>
+
+                    <label for="celularRegistro" class="celularRegistro">
+                        <span>Celular</span>
+                        <input type="number" id="celularRegistro" class="cajaCelularRegistro" placeholder="Ingrese su celular"  min="3000000000" max="9999999999" required>
+                    </label>
+
+                    <label for="direccionRegistro" class="direccionRegistro">
+                        <span>Direccion</span>
+                        <input type="text" id="direccionRegistro" class="cajaDireccionRegistro" placeholder="Ingrese su direccion" required>
+                    </label>
+
+                    <label for="paisRegistro" class="paisRegistro">
+                        <span>Pais</span>
+                        <input type="text" id="paisRegistro" class="cajaPaisRegistro" placeholder="Ingrese su pais" required>
+                    </label>
+
+                    <label for="departamentoRegistro" class="departamentoRegistro">
+                        <span>Departamento</span>
+                        <input type="text" id="departamentoRegistro" class="cajaDepartamentoRegistro" placeholder="Ingrese su Departamento" required>
+                    </label>
+
+                    <label for="ciudadRegistro" class="ciudadRegistro">
+                        <span>Ciudad</span>
+                        <input type="text" id="ciudadRegistro" class="cajaCiudadRegistro" placeholder="Ingrese su Ciudad" required>
+                    </label>
+
+                    <label for="codigoPostalRegistro" class="codigoPostalRegistro">
+                        <span>Codigo Postal</span>
+                        <input type="number" id="codigoPostalRegistro" class="cajaCodigoPostalRegistro" placeholder="Ingrese su Codigo Postal"  min="0" max="9999" required>
+                    </label>
+
                     <input type="submit" id="enviarRegistro" class="botonEnviarRegistro">
                 </form>
             </section>

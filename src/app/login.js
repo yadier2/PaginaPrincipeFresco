@@ -1,4 +1,4 @@
-var nombreLogin=document.getElementById("nombreLogin");
+var usuarioLogin=document.getElementById("usuarioLogin");
 var contrasenaLogin=document.getElementById("contrasenaLogin");
 var botonEnviar= document.getElementById("enviarLogin");
 
@@ -12,30 +12,41 @@ function receptor(){
         
         let i=0;
         var indice=0;
-        var nombre=nombreLogin.value;
+        var usuario=usuarioLogin.value;
         var contrasena=contrasenaLogin.value;
 
-        // cadena.forEach(element => alert(element.names==nombre));
+        // cadena.forEach(element => alert(element.user==usuario));
 
         for (i= 0; i < cadena.length; i++) {
-            if (cadena[i].names!=nombre && cadena[i].pass!=contrasena) {
+            if (cadena[i].user!=usuario && cadena[i].pass!=contrasena) {
             }else{
                 indice=i;
             }
         }
-        
-        if (cadena[indice].names==nombre && cadena[indice].pass==contrasena) {
+
+        if (cadena[indice].user==usuario && cadena[indice].pass==contrasena) {
 
             var persona={
-                names:cadena[indice].names,
+                user:cadena[indice].user,
                 pass:cadena[indice].pass,
-                email:cadena[indice].email
+                email:cadena[indice].email,
+
+                name:cadena[indice].name,
+                lastName:cadena[indice].lastName,
+                cedu:cadena[indice].cedu,
+                celu:cadena[indice].celu,
+                dir:cadena[indice].dir,
+                pais:cadena[indice].pais,
+                dep:cadena[indice].dep,
+                ciud:cadena[indice].ciud,
+                cpost:cadena[indice].cpost
             }
 
-            alert("usuario registrado: "+persona.names+" - "+persona.email+" - "+persona.pass);
+            alert("usuario registrado: "+persona.user+" - "+persona.email+" - "+persona.pass);
         }else{
             alert("el usuario no se encuentra registrado");
         }
-
-    }      
+    }else {
+        alert("el usuario no se encuentra registrado");
+      }      
 }
